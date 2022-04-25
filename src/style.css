@@ -1,3 +1,58 @@
-h1 {
-  color: blue;
+.weather-app {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid white;
+  padding: 30px;
+  border-radius: 8px;
+  border-color: white;
+  text-align: center;
+  background: radial-gradient(
+    circle at 22.4% 21.7%,
+    rgb(4, 189, 228) 0%,
+    rgb(2, 83, 185) 100.2%
+  );
+  color: white;
+}
+
+hr {
+  background-color: #faca33;
+}
+ul,
+li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+ul {
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+h2 {
+  font-size: 35px;
+}
+
+h4 {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.units {
+  font-size: 20px;
+  position: relative;
+  top: -15px;
+}
+.current-weather-icon {
+  font-size: 50px;
+  padding-bottom: 8px;
+}
+a {
+  color: black;
+  text-decoration: underline;
+}
+a:hover {
+  cursor: pointer;
+}
+form {
+  position: relative;
+  left: -130px;
+  padding-bottom: 40px;
 }

@@ -5,89 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="src/style.css" />
     <script
       src="https://kit.fontawesome.com/dd1d08b011.js"
       crossorigin="anonymous"
     ></script>
-
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
-      <h1>New York</h1>
-      <h5>Friday 12:00</h5>
-      <h2>68°C|F</h2>
-      <ul>
-        <li>Clear</li>
-        <li>Humidity: <span id="humidity">0</span>%</li>
-        <li>Wind: <span id="wind">0</span> mph</li>
-      </ul>
-      <div class="card-daily-forecast">
-        <div class="card-body">
-          <div class="row">
-            <div class="offset-1 col-2">
-              <div class="card-daily-info">
-                <div class="card-body">
-                  <h5 class="card-title">Mon</h5>
-                  <p class="card-text high-low-temp">75°/60°</p>
-                  <h6><i class="fa-solid fa-cloud-sun weather-icon"></i></h6>
+      <div class="weather-app">
+        <form>
+          <input placeholder="Enter city..." />
+          <button type="button" class="btn btn-warning">Search</button>
+        </form>
+        <h1>New York</h1>
+        <h4>Friday 12:00</h4>
+        <i class="fa-solid fa-sun weather-icon current-weather-icon"></i>
+        <h2>68<span class="units">°C|°F</span></h2>
+        <ul>
+          <li>Clear</li>
+          <li>Humidity: <span id="humidity">0</span>%</li>
+          <li>Wind: <span id="wind">0</span> mph</li>
+        </ul>
+        <hr />
+        <div class="card-daily-forecast">
+          <div class="card-body">
+            <div class="row">
+              <div class="offset-1 col-2">
+                <div class="card-daily-info">
+                  <div class="card-body">
+                    <h5 class="card-title">Mon</h5>
+                    <p class="card-text high-low-temp">75°/60°</p>
+                    <h6><i class="fa-solid fa-cloud-sun weather-icon"></i></h6>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-2">
-              <div class="card-daily-info">
-                <div class="card-body">
-                  <h5 class="card-title">Tues</h5>
-                  <p class="card-text high-low-temp">66°/50°</p>
-                  <h6><i class="fa-solid fa-sun weather-icon"></i></h6>
+              <div class="col-2">
+                <div class="card-daily-info">
+                  <div class="card-body">
+                    <h5 class="card-title">Tues</h5>
+                    <p class="card-text high-low-temp">66°/50°</p>
+                    <h6><i class="fa-solid fa-sun weather-icon"></i></h6>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-2">
-              <div class="card-daily-info">
-                <div class="card-body">
-                  <h5 class="card-title">Wed</h5>
-                  <p class="card-text high-low-temp">68°/55°</p>
-                  <h6><i class="fa-solid fa-sun weather-icon"></i></h6>
+              <div class="col-2">
+                <div class="card-daily-info">
+                  <div class="card-body">
+                    <h5 class="card-title">Wed</h5>
+                    <p class="card-text high-low-temp">68°/55°</p>
+                    <h6><i class="fa-solid fa-sun weather-icon"></i></h6>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-2">
-              <div class="card-daily-info">
-                <div class="card-body">
-                  <h5 class="card-title">Thurs</h5>
-                  <p class="card-text high-low-temp">78°/65°</p>
-                  <h6><i class="fa-solid fa-cloud-sun weather-icon"></i></h6>
+              <div class="col-2">
+                <div class="card-daily-info">
+                  <div class="card-body">
+                    <h5 class="card-title">Thurs</h5>
+                    <p class="card-text high-low-temp">78°/65°</p>
+                    <h6><i class="fa-solid fa-cloud-sun weather-icon"></i></h6>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-2">
-              <div class="card-daily-info">
-                <div class="card-body">
-                  <h5 class="card-title">Fri</h5>
-                  <p class="card-text high-low-temp">85°/68°</p>
-                  <h6>
-                    <i class="fa-solid fa-cloud-showers-heavy weather-icon"></i>
-                  </h6>
+              <div class="col-2">
+                <div class="card-daily-info">
+                  <div class="card-body">
+                    <h5 class="card-title">Fri</h5>
+                    <p class="card-text high-low-temp">85°/68°</p>
+                    <h6>
+                      <i
+                        class="fa-solid fa-cloud-showers-heavy weather-icon"
+                      ></i>
+                    </h6>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <a
+          class="signature"
+          href="https://github.com/madellester/new-weather-app"
+          target="_blank"
+          >Open-source code</a
+        >
+        by Madeline Lester
       </div>
-      <a
-        class="signature"
-        href="https://github.com/madellester/new-weather-app"
-        target="_blank"
-        >Open-source code</a
-      >
-      by Madeline Lester
     </div>
     <script src="src/app.js"></script>
   </body>

@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="src/style.css" />
-
+    <script
+      src="https://kit.fontawesome.com/dd1d08b011.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -18,11 +22,11 @@
     <div class="container">
       <h1>New York</h1>
       <h5>Friday 12:00</h5>
-      <h2>68°</h2>
+      <h2>68°C|F</h2>
       <ul>
         <li>Clear</li>
-        <li>Humidity</li>
-        <li>Wind</li>
+        <li>Humidity: <span id="humidity">0</span>%</li>
+        <li>Wind: <span id="wind">0</span> mph</li>
       </ul>
       <div class="card-daily-forecast">
         <div class="card-body">

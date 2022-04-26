@@ -1,6 +1,8 @@
-.weather-app {
+.weather-app-wrapper {
   max-width: 600px;
   margin: 0 auto;
+}
+.weather-app {
   border: 1px solid white;
   padding: 30px;
   border-radius: 8px;
@@ -63,7 +65,7 @@ h4 {
   padding-bottom: 8px;
 }
 a {
-  color: black;
+  color: rgb(2, 83, 185);
   text-decoration: underline;
   transition: ease-in-out;
   transition-delay: 150ms;

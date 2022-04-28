@@ -61,3 +61,8 @@ a:hover {
   cursor: pointer;
   color: #faca33;
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}

@@ -42,7 +42,7 @@ h4 {
   font-size: 18px;
   padding-bottom: 20px;
 }
-.temp-symbols {
+.units {
   font-size: 12px;
   position: relative;
   top: -15px;
@@ -60,8 +60,4 @@ a {
 a:hover {
   cursor: pointer;
   color: #faca33;
-}
-form {
-  max-width: 600px;
-  margin: 0 auto;
 }

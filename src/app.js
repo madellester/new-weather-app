@@ -1,6 +1,34 @@
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thurs", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+  <div class="col-2">
+                ${day}
+                <img
+                  src="http://openweathermap.org/img/wn/10d@2x.png"
+                  alt="light rain"
+                  width="50"
+                />
+                <span class="weather-forecast-max">80°</span>/<span
+                  class="weather-forecast-min"
+                  >70°</span
+                >
+              </div>
+            </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showCityTemperature(response) {
   let iconElement = document.querySelector("#icon");
-
   document.querySelector("h1").innerHTML = response.data.name;
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
@@ -79,3 +107,5 @@ fahrenheitLink.addEventListener("click", showFahrenheitTemp);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemp);
+
+displayForecast();

@@ -52,10 +52,11 @@ h4 {
   padding-bottom: 8px;
 }
 a {
-  color: rgb(2, 83, 185);
+  color: rgb(248, 249, 250);
   text-decoration: underline;
   transition: ease-in-out;
   transition-delay: 150ms;
+  text-decoration: none;
 }
 a:hover {
   cursor: pointer;

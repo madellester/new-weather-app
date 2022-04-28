@@ -67,3 +67,7 @@ a:hover {
   margin-top: 20px;
   text-align: center;
 }
+
+.signature {
+  color: rgb(2, 83, 185);
+}

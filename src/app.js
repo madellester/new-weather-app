@@ -8,7 +8,7 @@ function showCityTemperature(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
-  document.querySelector("#degrees").innerHTML = Math.round(
+  document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
   iconElement.setAttribute(
@@ -45,7 +45,7 @@ function showCelsiusTemp(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
-let celsiusTemperature = response.data.main.temp;
+let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);

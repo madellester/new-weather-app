@@ -108,6 +108,9 @@ let days = [
 ];
 let day = days[now.getDay()];
 let hours = now.getHours();
+if (hours > 12) {
+  hours = hours - 12;
+}
 if (hours < 10) {
   hours = `0${hours}`;
 }
@@ -120,3 +123,5 @@ currentTime.innerHTML = `as of ${day} at ${hours}:${minutes}`;
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheitTemp);
+
+searchCity("New York");

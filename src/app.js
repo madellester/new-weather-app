@@ -108,18 +108,17 @@ let days = [
 ];
 let day = days[now.getDay()];
 let hours = now.getHours();
+let amPm = "am";
 if (hours > 12) {
   hours = hours - 12;
-}
-if (hours < 10) {
-  hours = `0${hours}`;
+  amPm = "pm";
 }
 let minutes = now.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`;
 }
 
-currentTime.innerHTML = `as of ${day} at ${hours}:${minutes}`;
+currentTime.innerHTML = `as of ${day} at ${hours}:${minutes} ${amPm}`;
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheitTemp);

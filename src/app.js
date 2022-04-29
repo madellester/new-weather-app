@@ -32,7 +32,6 @@ function displayForecast(response) {
                   >${Math.round(forecastDay.temp.min)}°</span
                 >
               </div>
-            </div>
   `;
     }
   });

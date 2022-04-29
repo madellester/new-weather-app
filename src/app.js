@@ -27,6 +27,10 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+}
+
 function showCityTemperature(response) {
   let iconElement = document.querySelector("#icon");
   document.querySelector("h1").innerHTML = response.data.name;
@@ -46,6 +50,8 @@ function showCityTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
   celsiusTemperature = response.data.main.temp;
+
+  getForecast(response.data.coord);
 }
 
 function search(event) {

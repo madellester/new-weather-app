@@ -34,13 +34,18 @@ ul {
   padding-bottom: 30px;
   padding-top: 10px;
 }
+
+h1 {
+  padding-top: 20px;
+}
+
 h2 {
   font-size: 35px;
 }
 
 h4 {
   font-size: 18px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 .units {
   font-size: 12px;

@@ -50,7 +50,7 @@ h4 {
 .units {
   font-size: 12px;
   position: relative;
-  top: -15px;
+  top: -20px;
   font-weight: bold;
 }
 .current-weather-icon {
@@ -59,11 +59,10 @@ h4 {
 }
 a {
   color: rgb(248, 249, 250);
-  transition: ease-in-out;
 }
 a:hover {
-  cursor: pointer;
-  color: #faca33;
+  color: rgb(248, 249, 250);
+  cursor: default;
   text-decoration: none;
 }
 

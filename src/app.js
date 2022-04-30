@@ -27,7 +27,7 @@ function displayForecast(response) {
                 />
                 <span class="weather-forecast-max">${Math.round(
                   forecastDay.temp.max
-                )}°F</span><larger>|</larger><span
+                )}°F</span>/<span
                   class="weather-forecast-min"
                   >${Math.round(forecastDay.temp.min)}°F</span
                 >
@@ -85,11 +85,8 @@ function showFahrenheitTemp(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
 
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
-
-let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
